@@ -1,27 +1,79 @@
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 15px 30px;
-    background: white;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 30px;
+  background: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: black; /* Ensure it's visible */
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  z-index: 2000; /* Make sure it appears above other elements */
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  color: blue;
+}
+
+@media screen and (max-width: 768px) {
+  .hamburger {
+    display: block;
   }
-  
+
   .nav-links {
-    display: flex;
-    list-style: none;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color:black;
+    width: 200px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid red;
   }
   
-  .nav-links li {
-    margin: 0 15px;
-  }
-  
-  .nav-links a {
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-  }
-  
-  .nav-links a:hover {
-    color: blue;
-  }
-  
+  .nav-links.mobile {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+
+.nav-links.mobile li {
+    padding: 10px 15px;
+    text-align: center;
+}
+}
