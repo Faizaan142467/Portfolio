@@ -1,0 +1,76 @@
+/* Center the content and improve spacing */
+.home-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 80px 10%;
+    background-color: #121212; /* Dark Background */
+    color: white;
+  }
+  
+  /* Text Section */
+  .home-content {
+    max-width: 600px;
+  }
+  
+  /* Gradient Text Effect */
+  h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  
+  .gradient-text {
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  /* Subtext */
+  .subtext {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #bbb;
+  }
+  
+  /* Contact Button */
+  .contact-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    border-radius: 25px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-btn:hover {
+    background: linear-gradient(90deg, #0056b3, #007bff);
+    transform: scale(1.1);
+  }
+  
+  /* Profile Image */
+  .home-image img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #ff6a00;
+    box-shadow: 0 4px 10px rgba(255, 106, 0, 0.5);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .home-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .home-image {
+      margin-top: 20px;
+    }
+  }
+  
