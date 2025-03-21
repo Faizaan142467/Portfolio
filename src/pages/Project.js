@@ -13,14 +13,9 @@ const projects = [
     description: "Find and save your favorite recipes.",
   },
   {
-    name: "Mental Wellness App",
+    name: "Mental Wellness App (On Going)",
     link: "https://mental-wellness.vercel.app",
     description: "Track and improve your mental health.",
-  },
-  {
-    name: "Attendance Management System",
-    link: "https://attendance-system.vercel.app",
-    description: "Manage student attendance efficiently.",
   },
 ];
 
